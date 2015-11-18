@@ -16,6 +16,6 @@ public class ChangeCalculatonTest {
 	@Test
 	public void mediumChangeTest() {
 		Change changeCoin = ChangeCalculation.getCoinsFor(.06);
-		assertEquals(6, changeCoin.getPennies());
+		assertEquals(1, changeCoin.getNickless());
 	}
 }
