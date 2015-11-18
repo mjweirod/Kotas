@@ -12,4 +12,10 @@ public class ChangeCalculatonTest {
 		Change changeCoin = ChangeCalculation.getCoinsFor(.01);
 		assertEquals(1, changeCoin.getPennies());
 	}
+	
+	@Test
+	public void mediumChangeTest() {
+		Change changeCoin = ChangeCalculation.getCoinsFor(.06);
+		assertEquals(6, changeCoin.getPennies());
+	}
 }
